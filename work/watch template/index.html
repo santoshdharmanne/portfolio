@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch template</title>
+  <!-- boostrap link -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Aos link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- fontawsome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- start nav here-->
+  <nav id="nav-warpper">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">WATCH <span>EDITION</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mobile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV & AV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home Appliances</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Laptop & Monitors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">offers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="ms-auto top-rightnow">
+        <div id="myOverlay" class="overlay">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+          <div class="overlay-content">
+            <form action="/action_page.php">
+              <button type="submit"><i class="fa fa-search"></i></button>
+              <input type="text" placeholder="Search.." name="search">
+            </form>
+          </div>
+        </div>
+        <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+        <a href="#" class="fs-5 px-4"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+  </nav>
+  <!-- end nav here -->
+
+  <!-- banner section start -->
+  <!-- carousel section 1 -->
+  <div id="banner">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 py-5 banner-text">
+                <h2>The new Galaxy Watch4</h2>
+                <span>Starting at ₹ 23999* | Get additional ₹ 3000 cashback*</span>
+                <div class="mt-4 btn-mobile"><a class="btn-bannerone" href="#">Learn more</a>
+                  <a class="btn-banner" href="#">Bye now</a>
+                </div>
+              </div>
+              <div class="col-md-6 banner-img">
+                <img class="img-fluid" src="./banner img/pngegg1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carousel section 2 -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 py-5 banner-text">
+                <h2>The new Galaxy Watch4</h2>
+                <span>Starting at ₹ 23999* | Get additional ₹ 3000 cashback*</span>
+                <div class="mt-4 btn-mobile"><a class="btn-bannerone" href="#">Learn more</a>
+                  <a class="btn-banner" href="#">Bye now</a>
+                </div>
+              </div>
+              <div class="col-md-6  banner-img">
+                <img class="img-fluid" src="./banner img/watch-2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carousel section 3 -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 py-5 banner-text">
+                <h2>The new Galaxy Watch4</h2>
+                <span class="mobile-txet">Starting at ₹ 23999* | Get additional ₹ 3000 cashback*</span>
+                <div class="mt-4 btn-mobile"><a class="btn-bannerone" href="#">Learn more</a>
+                  <a class="btn-banner" href="#">Bye now</a>
+                </div>
+              </div>
+              <div class="col-md-6  banner-img">
+                <img class="img-fluid" src="./banner img/watch3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End banner section -->
+
+  <!-- start section -->
+  <div class="container-fluid section-line">
+    <div class="row py-3">
+      <div class="col-md-12 text-center">
+        <div class="section-text">
+          <h2>What's New</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-md-4 mb-4">
+          <div class="card py-4 animated-watch-section">
+            <img src="./products image/large-unscreen.gif" class="card-img-top animated-watch" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">New Galaxy Watch4</h5>
+              <a href="#" class="btn-product">Bye now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card py-4 animated-watch-section">
+            <img src="./products image/large-unscreen.gif" class="card-img-top animated-watch" alt="...">
+            <div class="card-body text-center  ">
+              <h5 class="card-title">New Galaxy Watch4</h5>
+              <a href="#" class="btn-product">Bye now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card py-4 animated-watch-section">
+            <img src="./products image/large-unscreen.gif" class="card-img-top animated-watch" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">New Galaxy Watch4</h5>
+              <a href="#" class="btn-product">Bye now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container" id="product-box">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="product-banner" data-aos="fade-up" data-aos-duration="2000">
+            <img class="img-fluid" src="./products image/watch 3.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="product-text  text-center" data-aos="fade-up" data-aos-duration="2000">
+            <h2>Galaxy Watch4</h2>
+            <a class="btn-productbox" href="#">See all</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container Galaxy-color">
+      <div class="row py-4">
+        <div class="col-md-3 mb-4">
+          <div class="card py-4 ">
+            <div> <span class="icon-label bg-primary">New</span>
+              <a class="icon-heart" href="#"><i class="fa-regular fa-heart"></i></a>
+            </div>
+            <img src="./products image/img-1.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Galaxy Watch4 Bluetooth (44mm)</h5>
+              <div class="card-price"><span>₹8000.00</span></div>
+              <a href="#" class="btn-button">Bye now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card py-4">
+            <div> <span class="icon-label bg-primary">New</span>
+              <a class="icon-heart" href="#"><i class="fa-regular fa-heart"></i></a>
+            </div>
+            <img src="./products image/img-2.png" class="card-img-top" alt="...">
+            <div class="card-body text-center  ">
+              <h5 class="card-title">Galaxy Watch4 Bluetooth (44mm)</h5>
+              <div class="card-price"><span>₹8000.00</span></div>
+              <a href="#" class="btn-button">Bye now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card py-4">
+            <div> <span class="icon-label bg-primary">New</span>
+              <a class="icon-heart" href="#"><i class="fa-regular fa-heart"></i></a>
+            </div>
+            <img src="./products image/img-3.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Galaxy Watch4 Bluetooth (44mm)</h5>
+              <div class="card-price"><span>₹8000.00</span></div>
+              <a href="#" class="btn-button">Bye now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card py-4">
+            <div> <span class="icon-label bg-primary">New</span>
+              <a class="icon-heart" href="#"><i class="fa-regular fa-heart"></i></a>
+            </div>
+            <img src="./products image/product-image4.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Galaxy Watch4 Bluetooth (44mm)</h5>
+              <div class="card-price"><span>₹8000.00</span></div>
+              <a href="#" class="btn-button">Bye now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3  col-6 mb-4">
+          <div class="card mobile-view">
+            <a class="icons" href="#"><i class="fa-regular fa-heart"></i></a>
+            <img src="./products image/buds-1.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title1">The new Galaxy Buds2</h5>
+              <div class="color-text1"><span>Starting at ₹11999* | Get additional ₹1200 cashback*</span></div>
+              <a href="#" class="btn-button mobile-btn">Bye now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6  mb-4">
+          <div class="card mobile-view">
+            <a class="icons" href="#"><i class="fa-regular fa-heart"></i></a>
+            <img src="./products image/tab-2.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title1">Galaxy Tab S8+ (Wi-Fi)</h5>
+              <div class="color-text1"><span>Starting at ₹11999* | Get additional ₹1200 cashback*</span></div>
+              <a href="#" class="btn-button mobile-btn">Bye now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6  mb-4">
+          <div class="card mobile-view">
+            <a class="icons" href="#"><i class="fa-regular fa-heart"></i></a>
+            <img src="./products image/tab-2.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title1">Galaxy Tab S8+ (Wi-Fi)</h5>
+              <div class="color-text1"><span>Starting at ₹11999* | Get additional ₹1200 cashback*</span></div>
+              <a href="#" class="btn-button mobile-btn">Bye now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6  mb-4">
+          <div class="card mobile-view">
+            <a class="icons" href="#"><i class="fa-regular fa-heart"></i></a>
+            <img src="./products image/pen-4.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title1">S Pen Pro</h5>
+              <div class="color-text1 mobile-btnbottom"><span>Starting at ₹11999* | Get additional ₹1200
+                  cashback*</span></div>
+              <a href="#" class="btn-button mobile-btn">Bye now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container" id="img-background">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="./products image/galaxy-s21-.png" class="img-fullscreen" data-aos="fade-up" data-aos-duration="2000" alt="">
+        </div>
+        <h2 class="txet-bottom" data-aos="fade-up" data-aos-duration="2000">The toughest Gorilla Glass yet</h2>
+        <p class="text-boottom-p" data-aos="fade-up" data-aos-duration="2000">Designed to scratch less and protect both front and back, this is the toughest Gorilla
+          Glass in a Galaxy smartphone.3</p>
+        <center>
+          <a class="btn-btn"data-aos="fade-up" data-aos-duration="2000" href="#">See all</a>
+        </center>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer-color">
+    <div class="container">
+      <div class="col-md-12 row">
+        <div class="col-md-3">
+          <div class="comp-name text-white">
+            <h4>Product & Service</h4><br>
+            <p>Halimun Street 25
+              Jakarta, Indonesia
+              12850</p><br>
+            <a class="footer-link" href="#">YourDomin.com</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="container footer">
+            <div class="row">
+              <div class="col-md-4 menu-list">
+                <ul class="list-unstyled footer-text">
+                  <li><a href="#">Sitemap</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Menu</a></li>
+                  <li><a href="#">Store</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 lorem">
+                <ul class="list-unstyled footer-text">
+                  <li><a href="#">Lorem Ipsum</a></li>
+                  <li><a href="#">Neque</a></li>
+                  <li><a href="#">Suspendisse</a></li>
+                  <li><a href="#">Dictum</a></li>
+                  <li><a href="#">Porttitor</a></li>
+                  <li><a href="#">Tincidunt</a></li>
+                  <li><a href="#">Enim lobortis</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <ul class="list-unstyled footer-text">
+                  <li><a href="#">Lorem Ipsum</a></li>
+                  <li><a href="#">Neque</a></li>
+                  <li><a href="#">Suspendisse</a></li>
+                  <li><a href="#">Dictum</a></li>
+                  <li><a href="#">Porttitor</a></li>
+                  <li><a href="#">Tincidunt</a></li>
+                  <li><a href="#">Enim lobortis</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <a class="navbar-brand" href="#">WATCH <span>EDITION</span></a><br>
+          <p class="text-muted">Copyright ©
+            <?php print date("Y"); ?> Freepik
+            Company S.L. All rights reserved.
+          </p><br>
+          <p>
+            <a class="footer-icons" href="#"><i class="fa-brands fa-facebook-square"></i></a>
+            <a class="footer-icons" href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            <a class="footer-icons" href="#"><i class="fa-brands fa-twitter-square"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- end section here -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 3000
+      });
+    });
+
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+  </script>
+  <!-- Aos link -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Boostrap link -->
+  <script src="./js/bootstrap.bundle.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
