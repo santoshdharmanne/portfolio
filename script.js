@@ -7,7 +7,7 @@ $('#toggle').click(function() {
 $('.overlay-menu a').click(function() {
   $('.button_container').toggleClass('active');
   $('#overlay').toggleClass('open');
-  return false;
+  return true;
 });
 
 // text-animation---------

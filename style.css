@@ -148,7 +148,7 @@ html {
   padding-top: 25px;
 }
 
-#footer-color {
+#footer_color {
   background-color: #faf9f9;
   width: 100%;
   height: 300px;
@@ -187,6 +187,7 @@ html {
 .up-arrow img {
   width: 40px;
   margin-top: 35px;
+  margin-right: 25px;
 }
 
 .anim-shape, .anim-shape2, .anim-shape1 {
@@ -736,6 +737,9 @@ nav {
   #banner #text-animation {
     width: 90%;
   }
+  .icon-down {
+    padding-top: 550px;
+  }
   .icon-down .btn-bordr {
     border-radius: 30px;
     padding: 5px 10px;
@@ -803,7 +807,7 @@ nav {
   .up-arrow {
     margin-bottom: 15px;
   }
-  #footer-color {
+  #footer_color {
     height: auto;
     margin-top: 120px;
   }
@@ -837,7 +841,7 @@ nav {
   .scroll-down .mouse-wrapper {
     top: 120px;
   }
-  #footer-color {
+  #footer_color {
     height: auto;
     margin-top: 120px;
   }
